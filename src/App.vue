@@ -1,26 +1,37 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app">
+    <h1 class="title">Perguntas de conhecimentos gerais</h1>
+
+    <FlashcardDeck />
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import FlashcardDeck from './components/FlaschardDeck.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    FlashcardDeck
   }
-}
+};
 </script>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   text-align: center;
+  margin-top: 40px;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 40px;
   color: #2c3e50;
-  margin-top: 60px;
+  font-family: Helvetica, Arial, sans-serif; /* Add the font-family property for Helvetica */
+}
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  background-color: rgb(89, 122, 141);
 }
 </style>
