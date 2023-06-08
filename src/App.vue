@@ -28,7 +28,7 @@ export default {
   font-weight: bold;
   margin-bottom: 40px;
   color: #2c3e50;
-  font-family: Helvetica, Arial, sans-serif; /* Add the font-family property for Helvetica */
+  font-family: Helvetica, Arial, sans-serif;
 }
 body {
   font-family: Helvetica, Arial, sans-serif;
